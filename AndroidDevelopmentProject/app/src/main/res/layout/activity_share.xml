@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uk.ac.abertay.androiddevelopmentproject.ShareActivity">
+
+    <EditText
+        android:id="@+id/Text_PhoneNumber"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Enter Phone Number..."
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <Spinner
+        android:id="@+id/Spinner_Contacts"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/Text_PhoneNumber"
+        android:layout_alignStart="@+id/Text_PhoneNumber" />
+
+    <EditText
+        android:id="@+id/Text_SMSMessage"
+        android:layout_width="340dp"
+        android:layout_height="375dp"
+        android:layout_alignStart="@+id/Spinner_Contacts"
+        android:layout_below="@+id/Spinner_Contacts"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/Button_SendSMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Text_SMSMessage"
+        android:layout_below="@+id/Text_SMSMessage"
+        android:layout_marginTop="9dp"
+        android:text="SEND" />
+</RelativeLayout>
