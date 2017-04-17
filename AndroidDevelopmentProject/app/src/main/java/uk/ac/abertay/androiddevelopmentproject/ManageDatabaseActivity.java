@@ -137,6 +137,7 @@ public class ManageDatabaseActivity extends AppCompatActivity implements View.On
 
         final EditText inputPassword = new EditText(this);
         inputPassword.setHint("Password...");
+        inputPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
         layout.addView(inputPassword);
 
         builder.setView(layout);
@@ -284,6 +285,7 @@ public class ManageDatabaseActivity extends AppCompatActivity implements View.On
         final EditText inputPassword = new EditText(this);
         inputPassword.setHint("Password...");
         inputPassword.setText(serverDetails[3].substring(4).trim());
+        inputPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
         layout.addView(inputPassword);
 
         builder.setView(layout);
